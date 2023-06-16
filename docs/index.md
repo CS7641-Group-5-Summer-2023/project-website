@@ -54,6 +54,33 @@ It is a simple and fast model, often used in binary classification problems. Des
 
 
 # Potential Results and Discussion
+In this project, our goal is to develop a machine learning model that accurately classifies breast tissues as cancerous or benign using the Wisconsin Breast Cancer Diagnostic dataset. Additionally, we aim to summarize the most important features driving the model's decisions by employing a game theory approach to calculate Shapley values for the cell features.
+
+To evaluate the performance of our models, we will utilize various quantitative metrics commonly used in machine learning. Some potential metrics we plan to use include:
+
+1. Accuracy: It measures the overall correctness of the model's predictions, representing the ratio of correctly classified samples to the total number of samples.
+
+2. Precision: It indicates the proportion of correctly classified malignant samples among the samples predicted as malignant. A higher precision value reflects fewer false positives.
+
+3. Recall (Sensitivity): It represents the proportion of correctly classified malignant samples out of the total actual malignant samples. A higher recall value signifies fewer false negatives.
+
+4. F1 Score: It is the harmonic mean of precision and recall, providing a balanced measure between the two. It is particularly useful when the dataset is imbalanced.
+
+5. Area Under the ROC Curve (AUC-ROC): It measures the trade-off between the true positive rate (sensitivity) and the false positive rate. A higher AUC-ROC value indicates better discrimination between the two classes.
+
+6. Confusion Matrix: It presents a tabular representation of the model's predictions compared to the ground truth, showing true positives, true negatives, false positives, and false negatives.
+
+The potential results of our project could include:
+
+1. Evaluation and Comparison of Models: We will train and evaluate different models, including K-Nearest Neighbors (KNN), Support Vector Machines (SVMs), Decision Trees, Random Forests, Neural Networks (NNs), Convolutional Neural Networks (CNNs), and Logistic Regression. We will compare their performance based on the aforementioned metrics to identify the most effective model for breast cancer classification.
+
+2. Accuracy and Reliability: We aim to achieve high accuracy and reliability in classifying breast tissues as cancerous or benign. By leveraging various machine learning algorithms, we expect to improve upon the existing methods and contribute to the early detection and diagnosis of breast cancer.
+
+3. Feature Importance and Interpretability: Through the game theory approach of calculating Shapley values, we intend to identify and summarize the most important features that drive the model's decisions. This can provide valuable insights to medical professionals and researchers, helping them understand the underlying factors contributing to the classification results.
+
+4. Potential Limitations and Future Directions: It is important to acknowledge that the results of the project may vary during the research process. Factors such as data quality, model selection, and hyperparameter tuning can influence the outcomes. If the initial results are not satisfactory, we will explore further improvements, such as data augmentation techniques, ensemble methods, or more advanced deep learning architectures.
+
+By evaluating and discussing the potential results of our machine learning project, we can set clear expectations and provide a roadmap for further investigation and refinement. It is essential to remain flexible and adaptive throughout the research process, allowing for adjustments and improvements based on the insights gained from the experimental results.
 
 # References
 
