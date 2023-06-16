@@ -3,29 +3,19 @@ title: Breast Cancer Detection (Group 5)
 layout: default
 ---
 # Introduction
-Breast cancer is one of the most common cancers worldwide, with 284,200 breast cancer cases and 44,130 deaths in 2021 in the US alone [1]. Early detection and accurate classification of breast tissues as either cancerous or benign are crucial for timely and effective treatment. While these classifications are currently performed by trained medical professionals from histopathological data, over the years, researchers have made significant progress in developing machine-learning techniques to diagnose breast cancer. These techniques leverage features from medical imaging data, such as mammograms and ultrasound images from breast cancer patients [2].  Generally, the classification distinguishes breast tumors into two types, benign and malignant. Benign is a noninvasive (non-cancerous) while malignant is an invasive (cancerous) type of tumor. But, both tumors have further subtypes that must be diagnosed individually because each may lead to different prognoses and treatment plans. The current problem lies in the variability and complexity of breast tissue characteristics, making accurate classification a non-trivial task. These subtypes are often detected by cellular measurements, such as the cell's radius, cell texture, the shape of nuclei, etc., and proper diagnosis requires accurate identification of each subcategory of breast cancer [3].
+Breast cancer is a prevalent global cancer, causing significant mortality. In the United States alone, there were 284,200 cases and 44,130 deaths in 2021 [1]. Timely and accurately identifying cancerous and benign breast tissues is vital for effective treatment. While histopathological data analyzed by trained medical professionals is currently used for classification, machine-learning techniques using medical imaging data, such as mammograms and ultrasound images, have shown promise in diagnosing breast cancer [2]. These techniques primarily distinguish between benign and malignant tumors, but further classification is necessary due to distinct subtypes that influence prognosis and treatment planning. The challenge lies in accurately identifying each subtype due to the complexity and variability of breast tissue characteristics, often relying on cellular measurements [3].
 
 # Problem Statement
 Despite the advancements in breast cancer classification, there still remains a challenge to achieving high accuracy and reliability. The motivation behind this project is to develop an ML model that not only accurately classifies breast tissues as cancerous or benign but also summarizes the most important features driving the decisions (a more game theory approach of calculating Shapely values for the cell features) [4]. 
 
 # Dataset
 
-We will use the publicly available Wisconsin Breast Cancer Diagnostic dataset [5], with samples labeled “benign” (357 samples) or “malignant” (212 samples), The features are computed from a digitized image of a fine needle aspirate (FNA) of a breast mass and describe the characteristics of the cell nuclei in the image. The 10 real-valued features computed for each cell nucleus are:
-a) radius (mean of distances from the center to points on the perimeter)
-b) texture (standard deviation of gray-scale values)
-c) perimeter
-d) area
-e) smoothness (local variation in radius lengths)
-f) compactness (perimeter^2 / area - 1.0)
-g) concavity (severity of concave portions of the contour)
-h) concave points (number of concave portions of the contour)
-i) symmetry
-j) fractal dimension ("coastline approximation" - 1)
+We will utilize the publicly available Wisconsin Breast Cancer Diagnostic dataset [5], containing 357 samples labeled as "benign" and 212 samples labeled as "malignant." The dataset consists of features computed from digitized fine needle aspirate (FNA) images of breast masses, specifically describing cell nucleus characteristics. These features include mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension. Each feature is represented by a real-valued value.
 
 
 # Methods
 We will use various models to solve this problem, including supervised learning and unsupervised learning. These are our candidates. 
-a) K-means is a type of unsupervised learning algorithm used primarily for clustering problems.
+a) K-means is a type of unsupervised learning algorithm used for clustering problems.
 b) SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space.
 c) A decision tree is a supervised learning algorithm used for classification and regression. Random forests aggregate the predictions of many decision trees.
 d) Neural Networks (NNs) are algorithms modeled after the human brain, which can be used in supervised learning for tasks like classification and regression. 
