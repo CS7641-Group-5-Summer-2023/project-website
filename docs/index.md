@@ -24,27 +24,13 @@ j) fractal dimension ("coastline approximation" - 1)
 
 
 # Methods
-We will use various models to solve this problem, including supervised learning and unsupervised learning. These are our candidate models.
-
-Unsupervised Learning:
-
-1. K-Nearest Neighbors (KNN): KNN is a type of instance-based learning which provides useful predictions in medical diagnosis problems. Even though KNN can be used for supervised learning tasks, we will use it in an unsupervised context as a clustering algorithm.
-
-Supervised Learning:
-
-1. Support Vector Machines (SVMs): SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space. They can handle both linearly separable and non-linear cases using kernel functions.
-
-2. Decision Trees and Random Forests:
-A decision tree is a supervised learning algorithm used for classification and regression. It learns a series of explicit if-then rules on feature values to predict a target value. Random forests aggregate the predictions of many decision trees.
-
-3. Neural Networks: 
-Neural Networks (NNs) are algorithms used in supervised learning for tasks like classification and regression. They consist of interconnected layers of nodes or "neurons" that process input data and learn to make accurate predictions.
-
-4. Convolutional Neural Networks:
-Convolutional Neural Networks (CNNs) are a special type of Neural Network designed to process grid-like data such as images. They utilize convolutional layers, which automatically and adaptively learn spatial hierarchies of features. CNNs have been more efficient in tasks such as image classification and object detection.
-
-5. Logistic Regression:
-It is a simple and fast model, often used in binary classification problems. Despite its simplicity, it can perform well when the relationship between the features and the target variable is approximately linear.
+We will use various models to solve this problem, including supervised learning and unsupervised learning. These are our candidates. 
+a) K-Nearest Neighbors is a type of instance-based learning. We will use it in an unsupervised context as a clustering algorithm. 
+b) SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space.
+c) A decision tree is a supervised learning algorithm used for classification and regression. Random forests aggregate the predictions of many decision trees.
+d) Neural Networks (NNs) are algorithms modeled after the human brain, which can be used in supervised learning for tasks like classification and regression. 
+e) Convolutional Neural Networks (CNNs) are a special type of Neural Network designed to process grid-like data such as images.
+f) Logistic Regression is a simple and fast model often used in binary classification problems.
 
 # Potential Results and Discussion
 In this project, we expect to achieve several outcomes. Firstly, we will evaluate and compare different machine learning models, including K-Nearest Neighbors, Support Vector Machines, Decision Trees, Random Forests, Neural Networks, Convolutional Neural Networks, and Logistic Regression, based on metrics like accuracy, precision, recall, F1 score, AUC-ROC, and the confusion matrix. This analysis will help us identify the most effective model for breast cancer classification. Secondly, our aim is to attain high accuracy and reliability in distinguishing between cancerous and benign breast tissues, which will contribute to timely detection and diagnosis of breast cancer. Additionally, we plan to calculate Shapley values to determine the most influential features driving the model's decisions, providing valuable insights for medical professionals and researchers. We acknowledge the possibility of limitations and will explore potential improvements, such as data augmentation, ensemble methods, or advanced deep learning architectures, if necessary. Throughout the research process, we will remain flexible and adaptive to refine our approach based on the insights gained from the experimental results.
