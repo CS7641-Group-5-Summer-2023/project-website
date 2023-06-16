@@ -29,29 +29,22 @@ We will use various models to solve this problem, including supervised learning 
 Unsupervised Learning:
 
 1. K-Nearest Neighbors (KNN): KNN is a type of instance-based learning which provides useful predictions in medical diagnosis problems. Even though KNN can be used for supervised learning tasks, we will use it in an unsupervised context as a clustering algorithm.
-<br>https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans<br>
 
 Supervised Learning:
 
 1. Support Vector Machines (SVMs): SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space. They can handle both linearly separable and non-linear cases using kernel functions.
-<br>https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html<br>
 
 2. Decision Trees and Random Forests:
 A decision tree is a supervised learning algorithm used for classification and regression. It learns a series of explicit if-then rules on feature values to predict a target value. Random forests aggregate the predictions of many decision trees.
-<br>https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier<br>
 
 3. Neural Networks: 
 Neural Networks (NNs) are algorithms used in supervised learning for tasks like classification and regression. They consist of interconnected layers of nodes or "neurons" that process input data and learn to make accurate predictions.
-<br>https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier<br>
 
 4. Convolutional Neural Networks:
 Convolutional Neural Networks (CNNs) are a special type of Neural Network designed to process grid-like data such as images. They utilize convolutional layers, which automatically and adaptively learn spatial hierarchies of features. CNNs have been more efficient in tasks such as image classification and object detection.
-<br>https://www.tensorflow.org/tutorials/images/cnn<br>
 
 5. Logistic Regression:
 It is a simple and fast model, often used in binary classification problems. Despite its simplicity, it can perform well when the relationship between the features and the target variable is approximately linear.
-<br>https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression<br>
-
 
 # Potential Results and Discussion
 In this project, our goal is to develop a machine learning model that accurately classifies breast tissues as cancerous or benign using the Wisconsin Breast Cancer Diagnostic dataset. Additionally, we aim to summarize the most important features driving the model's decisions by employing a game theory approach to calculate Shapley values for the cell features.
@@ -94,3 +87,16 @@ By evaluating and discussing the potential results of our machine learning proje
 
 > Wisconsin Diagnostic Breast Cancer (WDBC) Dataset and Wisconsin Prognostic Breast Cancer (WPBC) Dataset.
 http://ftp.ics.uci.edu/pub/machine-learning-databases/breast-cancer-wisconsin/
+
+> K-Nearest Neighbors (KNN): https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans
+
+> Support Vector Machines (SVMs): https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
+
+> Decision Trees and Random Forests: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn.ensemble.RandomForestClassifier
+
+> Neural Networks: https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier
+
+> Convolutional Neural Networks: https://www.tensorflow.org/tutorials/images/cnn
+
+> Logistic Regression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression
+
