@@ -15,12 +15,11 @@ We will utilize the publicly available Breast Cancer Histopathological Database 
 
 # Methods
 We will use various models to solve this problem, including supervised learning and unsupervised learning. These are our candidates. 
-a) K-means is a type of unsupervised learning algorithm used for clustering problems.
-b) SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space.
-c) A decision tree is a supervised learning algorithm used for classification and regression. Random forests aggregate the predictions of many decision trees.
-d) Neural Networks (NNs) are algorithms modeled after the human brain, which can be used in supervised learning for tasks like classification and regression. 
+a) K-means: Since the core task of breast cancer prediction is better suited to supervised learning algorithms, we would use K-means to identify clusters in the data and then inspect these clusters to see if they correspond to malignant or benign tumors.
+b) SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space, and they can be effective for breast cancer prediction.
+c) Decision trees can capture complex relationships in the data. They can learn a series of explicit if-then rules on feature values to predict a target value, which makes them suitable for cancer prediction. Random forests aggregate the predictions of many decision trees, leading to improved accuracy and robustness.
+d) Neural Networks (NNs) can capture complex patterns and nonlinearities in data, making them effective for breast cancer prediction. 
 e) Convolutional Neural Networks (CNNs) are a special type of Neural Network designed to process grid-like data such as images.
-f) Logistic Regression is a simple and fast model often used in binary classification problems.
 
 # Potential Results and Discussion
 In this project, we expect to achieve several outcomes. Firstly, we will evaluate and compare different machine learning models, including K-Nearest Neighbors, Support Vector Machines, Decision Trees, Random Forests, Neural Networks, Convolutional Neural Networks, and Logistic Regression, based on metrics like accuracy, precision, recall, F1 score, AUC-ROC, and the confusion matrix. This analysis will help us identify the most effective model for breast cancer classification. Secondly, our aim is to attain high accuracy and reliability in distinguishing between cancerous and benign breast tissues, which will contribute to timely detection and diagnosis of breast cancer. Additionally, we plan to calculate Shapley values to determine the most influential features driving the model's decisions, providing valuable insights for medical professionals and researchers. We acknowledge the possibility of limitations and will explore potential improvements, such as data augmentation, ensemble methods, or advanced deep learning architectures, if necessary. Throughout the research process, we will remain flexible and adaptive to refine our approach based on the insights gained from the experimental results.
@@ -44,6 +43,4 @@ In this project, we expect to achieve several outcomes. Firstly, we will evaluat
 > Neural Networks: https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier
 
 > Convolutional Neural Networks: https://www.tensorflow.org/tutorials/images/cnn
-
-> Logistic Regression: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html#sklearn.linear_model.LogisticRegression
 
