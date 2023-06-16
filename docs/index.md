@@ -18,8 +18,9 @@ We aim to use unsupervised learning for exploratory analysis of our problem spac
 <li> Dimensionality reduction methods like PCA can improve tractability and feature prioritization.
 <li> With the potential for high dimensionality, a multi-class application of SVMs can help find optimal hyperplanes separating subtypes.
 <li> Decision trees can extract explicit if-then rules on feature values, making them suitable for cancer prediction. Random forests can lead to improved robustness &mdash; feature importances are valuable for interpretability.
-<li> With image data, convolutional/feed-forward neural networks could be viable to extract complex, non-linear relationships.
-</ol>
+<li> With image data, convolutional/feed-forward neural networks could be viable to extract complex, non-linear relationships.  
+</ol>  
+
 
 # Potential Results and Discussion
 In this project, we expect to achieve several outcomes. Firstly, we will evaluate and compare our candidate machine learning models based on metrics like accuracy, precision/recall, F1 score, AUC-ROC, and the confusion matrix. This analysis will help us identify the most effective model for breast cancer classification. Given the healthcare context of our problem, false-positive rate is also a key consideration.
