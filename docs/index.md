@@ -25,7 +25,7 @@ j) fractal dimension ("coastline approximation" - 1)
 
 # Methods
 We will use various models to solve this problem, including supervised learning and unsupervised learning. These are our candidates. 
-a) K-Nearest Neighbors is a type of instance-based learning. We will use it in an unsupervised context as a clustering algorithm. 
+a) K-means is a type of unsupervised learning algorithm used primarily for clustering problems.
 b) SVMs are powerful models that can find an optimal hyperplane that separates different classes in a high-dimensional space.
 c) A decision tree is a supervised learning algorithm used for classification and regression. Random forests aggregate the predictions of many decision trees.
 d) Neural Networks (NNs) are algorithms modeled after the human brain, which can be used in supervised learning for tasks like classification and regression. 
@@ -48,7 +48,7 @@ In this project, we expect to achieve several outcomes. Firstly, we will evaluat
 > Wisconsin Diagnostic Breast Cancer (WDBC) Dataset and Wisconsin Prognostic Breast Cancer (WPBC) Dataset.
 http://ftp.ics.uci.edu/pub/machine-learning-databases/breast-cancer-wisconsin/
 
-> K-Nearest Neighbors (KNN): https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans
+> KMeans: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans
 
 > Support Vector Machines (SVMs): https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
 
