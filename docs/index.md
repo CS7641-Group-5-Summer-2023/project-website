@@ -48,7 +48,7 @@ Secondly, we aim to attain high accuracy and reliability in distinguishing betwe
 
 # Contribution Table
 
-<table rules="all" style="border:2px solid;margin-left:auto;margin-right:auto;">
+<table rules="all" style="border:2px solid;">
   <thead>
     <tr>
       <th></th>
