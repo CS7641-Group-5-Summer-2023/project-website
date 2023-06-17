@@ -135,4 +135,4 @@ Secondly, we aim to attain high accuracy and reliability in distinguishing betwe
   </tbody>
 </table>
 
-Timeline chart: https://www.dropbox.com/s/8jzimta0l86ylog/ML%20Project%205%20Timeline.xlsx?dl=0
+Link to timeline chart - [Project Timeline](https://www.dropbox.com/s/8jzimta0l86ylog/ML%20Project%205%20Timeline.xlsx?dl=0)
