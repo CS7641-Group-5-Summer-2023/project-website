@@ -1,5 +1,5 @@
 ---
-title: Breast Cancer Detection (Group 5)
+title: Breast Cancer Detection and Classification using Histopathological Images (Group 5)
 layout: default
 ---
 # Introduction
