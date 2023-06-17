@@ -46,3 +46,91 @@ Secondly, we aim to attain high accuracy and reliability in distinguishing betwe
 
 > Convolutional Neural Networks: https://www.tensorflow.org/tutorials/images/cnn
 
+# Contribution Table
+
+<table rules="all" style="border:2px solid;margin-left:auto;margin-right:auto;">
+  <thead>
+    <tr>
+      <th></th>
+      <th style="text-align: center"> Ujani </th>
+      <th style="text-align: center"> Xing </th>
+      <th style="text-align: center"> Bobak </th>
+      <th style="text-align: center"> Huijie </th>
+      <th style="text-align: center"> Srihas </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th style="text-align: center">Introduction</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Problem Statement</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Dataset Description</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Methods</th>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Potential Results & Discussion</th>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Review and Editing</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Github Page</th>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Presentation Slides</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+        <tr>
+      <th style="text-align: center">Recording</th>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+  </tbody>
+</table>
