@@ -134,3 +134,5 @@ Secondly, we aim to attain high accuracy and reliability in distinguishing betwe
     </tr>
   </tbody>
 </table>
+
+Timeline chart: https://docs.google.com/spreadsheets/d/1lp620snamYMfJ0CKjxp-SOcoEyD6iYLlhQRvaElvAMA/edit#gid=0
