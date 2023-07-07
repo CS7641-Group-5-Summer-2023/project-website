@@ -64,7 +64,9 @@ K-means clustering is a method of vector quantization, originally from signal pr
 
 Wisconsin breast cancer dataset:
 Applying PCA to reduce dimensionality to 2 and visualization.
+
 <img width="289" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/e50e1eae-6e1b-4800-a333-c1f48a4de738">
+
 Silhouette Score: 0.3845494883485513
 
 A silhouette score of 0.3845 suggests that the clustering is reasonably effective, with some degree of separation and assignment correctness, but there may be room for improvement. 
