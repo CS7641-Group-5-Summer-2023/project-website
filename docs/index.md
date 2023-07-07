@@ -64,10 +64,15 @@ K-means clustering is a method of vector quantization, originally from signal pr
 
 Wisconsin breast cancer dataset:
 Applying PCA to reduce dimensionality to 2 and visualization.
-![image](https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/6560e254-d17d-489b-bad9-bfad6ee3ea09)
- 
+<img width="289" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/e50e1eae-6e1b-4800-a333-c1f48a4de738">
 Silhouette Score: 0.3845494883485513
-A silhouette score of 0.3845 suggests that the clustering is reasonably effective, with some degree of separation and assignment correctness, but there may be room for improvement. K-means clustering may not be the most suitable method for breast cancer detection and classification. K-means clustering is primarily an unsupervised learning algorithm used for clustering data into groups based on similarity. It does not directly consider the class labels or target variable during training. For breast cancer detection and classification, we have labeled data where each sample is associated with a specific class (benign or malignant). In this case, supervised learning algorithms such as logistic regression, support vector machines (SVM), random forests, or neural networks are more commonly used for classification tasks. These algorithms take into account the labeled data and learn to classify new samples based on the patterns and relationships in the training data.
+
+A silhouette score of 0.3845 suggests that the clustering is reasonably effective, with some degree of separation and assignment correctness, but there may be room for improvement. 
+K-means clustering may not be the most suitable method for breast cancer detection and classification. 
+
+K-means clustering is primarily an unsupervised learning algorithm used for clustering data into groups based on similarity. It does not directly consider the class labels or target variable during training. 
+
+For breast cancer detection and classification, we have labeled data where each sample is associated with a specific class (benign or malignant). In this case, supervised learning algorithms such as logistic regression, support vector machines (SVM), random forests, or neural networks are more commonly used for classification tasks. These algorithms take into account the labeled data and learn to classify new samples based on the patterns and relationships in the training data.
 
 
 # References
