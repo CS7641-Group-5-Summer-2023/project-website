@@ -90,6 +90,11 @@ The paper proposes selecting patches of the RGB slide image - we selected 25 pat
 In order to capture color information, we create a histogram over each of the color channels, with 256 bins each. The product of this matrix with its tranpose results in another feature vector of size 3x3, capturing global color information.
 These features are flattened together to provide 34 (25 + 9) features per patch. To get the features for an image, we take the mean of its patch features.
 
+To visualize the data, we apply PCA and reduce the number of features to 3. We can observe that there is not much obvious class similarity - apart from a small group of malignant samples with high feature values, the two classes have significant overlap.
+
+This results in poor clustering results - K-means had an accuracy of ~63% when distinguishing between a set number of clusters (2, one benign and one malignant).
+
+<img width="400" alt="image" src="assets/class_sep.png">
 
 ### Support Vector Machine Classification
 <img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
