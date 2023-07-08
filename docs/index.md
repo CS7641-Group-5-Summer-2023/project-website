@@ -13,6 +13,7 @@ We are utilizing two datasets, one with unannotated mammogram images and the oth
 <ol>
   <li> Image Dataset: Publicly available Breast Cancer Histopathological Database [4]. The dataset is composed of 9,109 microscopic images of breast tumor tissue using different magnifying factors (40X, 100X, 200X, and 400X). It contains 2,480 benign and 5,429 malignant samples (700X460 pixels, 3-channel RGB, 8-bit depth). The benign and malignant samples are further classified into Adenosis, Fibroadenoma, Tubular Adenoma, Phyllodes Tumor for benign samples and Ductal Carcinoma, Lobular Carcinoma, Mucinous Carcinoma (Colloid), and Papillary Carcinoma for malignant samples.</li>
 <li>Feature Annotated Dataset: Publicly available Wisconsin Breast Cancer Diagnostic dataset [5]. The dataset contains 357 samples labeled as "benign" and 212 samples labeled as "malignant." The dataset consists of features computed from digitized fine needle aspirate (FNA) images of breast masses, specifically describing cell nucleus characteristics. These features include mean radius, texture, perimeter, area, smoothness, compactness, concavity, concave points, symmetry, and fractal dimension. </li>
+</ol>
 
 # Methods
 We have divided our analysis into parts, first using the image dataset and second using the feature annotated dataset.
@@ -21,7 +22,7 @@ We have divided our analysis into parts, first using the image dataset and secon
   <ol>
       <li>Data Cleaning and Preprocessing</li>
       <li>Feature Extraction</li>
-      <li>Unsupervized</li>
+      <li>Unsupervised</li>
       <li>Support Vector Machine Classification</li>
       <li>Random Forest Classification</li> 
   </ol>
@@ -50,8 +51,8 @@ In this project, we expect to achieve several outcomes. Firstly, we will evaluat
 Secondly, we aim to attain high accuracy and reliability in distinguishing between cancerous and benign breast tissue to aid in timely diagnosis. We plan to calculate interpretability metrics like Shapley values to determine the most influential features, providing insights for medical professionals and researchers. We acknowledge the possibility of limitations and will explore additional techniques such as data augmentation, ensemble methods, multimodal classification, or advanced deep-learning architectures if applicable.
 --->
 # Results and Discussion
-  ## Image Dataset
-  ### Data Cleaning and Preprocessing
+## Image Dataset
+### Data Cleaning and Preprocessing
 
 The original dataset has been divided into five parts for cross-validation to ensure there are no overlaps between the training and testing data. We use the second fold data for this analysis since it has the highest number of training images.
       <img width="750" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/c0e1d9c5-e030-43e2-a3ca-0838590a6966">
@@ -79,11 +80,19 @@ The original dataset has been divided into five parts for cross-validation to en
 
    As we can see here, malignant tumors often lose the contour definitions that can be observed in benign tissues.
    
-   ### Unsupervised
+   The outputs from thresholding are good candidates for a pipeline using image-based convolutional neural networks. However, in order to visualize our dataset we also attempted to extract aggregate features and applied unsupervised learning on the decreased feature set.
+
+   ### Image Descriptor Features
+   We used a patch-based image feature extraction technique [7] to extract features with the aim of unsupervised exploration. For this study we restrict the dataset to 40x magnification.
+   The paper proposes selecting patches of the RGB slide image - we selected 25 patches per image with a patch size of 100x100. For each patch, we compute the Sobel kernel convolution over the grayscale image as an approximation of the gradient of the image - both in x- and y- directions. Combined with the original RGB intensities, this results in a feature vector of size 5 for each pixel of the patch. The regional covariance descriptor (RCD) of the patch is then computed as the covariance of the patch. This holds information about contours/edges.
+   
+   In order to capture color information, we create a histogram over each of the color channels, with 256 bins each. The product of this matrix with its tranpose results in another feature vector of size 3x3, capturing global color information.
+   These features are flattened together to provide 34 (25 + 9) features per patch. To get the features for an image, we take the mean of its patch features.
+
    ### Support Vector Machine Classification
    <img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
 <img width="344" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/2787950a-e37b-4f4c-bec3-1afef41f2666">
-  
+
 The above visualizations demonstrate SVMs’ poor ability of handling image-based data. It isn’t suitable for such data for the following reason.
 
 First, when using raw image data, each pixel in the image becomes a feature. This significantly increases the dimensionality of the feature space, which can lead to worse performance due to the curse of dimensionality.
@@ -155,7 +164,11 @@ We observe that, in general, datasets that have been annotated by humans for cha
 > F. A. Spanhol, L. S. Oliveira, C. Petitjean and L. Heutte, "A Dataset for Breast Cancer Histopathological Image Classification," in IEEE Transactions on Biomedical Engineering, vol. 63, no. 7, pp. 1455-1462, July 2016, doi: 10.1109/TBME.2015.2496264.
 
 > Wisconsin Diagnostic Breast Cancer (WDBC) Dataset and Wisconsin Prognostic Breast Cancer (WPBC) Dataset.
+
 > Li, H., Meng, X., Wang, T., Tang, Y., & Yin, Y. (2017). Breast masses in mammography classification with local contour features. Biomedical engineering online, 16(1), 1-12.
+
+> Frontier MD Image Descriptors: https://www.frontiersin.org/articles/10.3389/fdgth.2020.572671/full
+
 > KMeans: https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#sklearn.cluster.KMeans
 
 > Support Vector Machines (SVMs): https://scikit-learn.org/stable/modules/generated/sklearn.svm.LinearSVC.html
