@@ -62,7 +62,7 @@ The original dataset has been divided into five parts for cross-validation to en
 
 <img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/cf94e86b-c24b-4e0e-a171-b720ea51adfb">
 
-<img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/balanced.jpeg">
+<img width="300" alt="image" src="assets/balanced.jpeg">
 
 ### Feature Extraction
 As discussed before, one of the drawbacks of this dataset is the lack of human annotations of the mammogram images. In order to make the images more interpretable to our ML models, we perform feature selection to highlight the contours and differentiate the background of these images. We focus on extracting the contours since they are the most distinguishable features between benign and malignant tumors [6] and can act as a proxy for annotated data like "nuclei radius", "concavity," and more. 
