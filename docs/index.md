@@ -92,9 +92,9 @@ These features are flattened together to provide 34 (25 + 9) features per patch.
 
 To visualize the data, we apply PCA and reduce the number of features to 3. We can observe that there is not much obvious class similarity - apart from a small group of malignant samples with high feature values, the two classes have significant overlap.
 
-This results in poor clustering results - K-means had an accuracy of ~63% when distinguishing between a set number of clusters (2, one benign and one malignant).
+This results in poor clustering results - K-means had an accuracy of ~63% when distinguishing between a set number of clusters (2, one benign and one malignant). The result was similar when using all 34 features, or with the PCA-reduced feature set of 3.
 
-<img width="400" alt="image" src="assets/class_sep.png">
+<img width="800" alt="image" src="assets/class_sep.png">
 
 ### Support Vector Machine Classification
 <img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
