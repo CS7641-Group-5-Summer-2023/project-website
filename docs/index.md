@@ -99,6 +99,8 @@ This results in poor clustering results - K-means had an accuracy of ~63% when d
 
 <img width="800" alt="image" src="assets/kmeans.png">
 
+The main reason for the lack of separation can be attributed to the location of the malignant portions of the slide. As the source in [7] describes, expert annotation was required to identify which part of the image is actually malignant - this helped them design their bag-based SVM approach, which encoded positional information about the patch within the image. It may be possible to circumvent this problem by using a CNN on the filtered images, due to its ability to extract image features and derive complex non-linear relationships.
+
 ### Support Vector Machine Classification
 <img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
 <img width="344" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/2787950a-e37b-4f4c-bec3-1afef41f2666">
@@ -263,7 +265,7 @@ We observe that, in general, datasets that have been annotated by humans for cha
       <th style="text-align: center">Project Report</th>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
-      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
     </tr>
