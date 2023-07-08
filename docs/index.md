@@ -50,6 +50,7 @@ In this project, we expect to achieve several outcomes. Firstly, we will evaluat
 
 Secondly, we aim to attain high accuracy and reliability in distinguishing between cancerous and benign breast tissue to aid in timely diagnosis. We plan to calculate interpretability metrics like Shapley values to determine the most influential features, providing insights for medical professionals and researchers. We acknowledge the possibility of limitations and will explore additional techniques such as data augmentation, ensemble methods, multimodal classification, or advanced deep-learning architectures if applicable.
 --->
+
 # Results and Discussion
 ## Image Dataset
 ### Data Cleaning and Preprocessing
@@ -57,8 +58,8 @@ Secondly, we aim to attain high accuracy and reliability in distinguishing betwe
 The original dataset has been divided into five parts for cross-validation to ensure there are no overlaps between the training and testing data. We use the second fold data for this analysis since it has the highest number of training images.
       <img width="750" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/c0e1d9c5-e030-43e2-a3ca-0838590a6966">
 
-  #### Class Imbalance
-  The training data for fold 2 had highly imbalanced data, with around 32% (1,323) of images tagged as 'benign' and the rest 68% (2,860) as 'malignant'. There were two possible ways to go about handling the class imbalance, either augmenting more images for the benign class or downsampling the malignant class. Although augmentation is an interesting challenge, we decided to go forward with downsampling the data, to save on computational resources and reduce run times of models.
+#### Class Imbalance
+The training data for fold 2 had highly imbalanced data, with around 32% (1,323) of images tagged as 'benign' and the rest 68% (2,860) as 'malignant'. There were two possible ways to go about handling the class imbalance, either augmenting more images for the benign class or downsampling the malignant class. Although augmentation is an interesting challenge, we decided to go forward with downsampling the data, to save on computational resources and reduce run times of models.
 
 <img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/cf94e86b-c24b-4e0e-a171-b720ea51adfb">
 
@@ -95,6 +96,8 @@ To visualize the data, we apply PCA and reduce the number of features to 3. We c
 This results in poor clustering results - K-means had an accuracy of ~63% when distinguishing between a set number of clusters (2, one benign and one malignant). The result was similar when using all 34 features, or with the PCA-reduced feature set of 3.
 
 <img width="800" alt="image" src="assets/class_sep.png">
+
+<img width="800" alt="image" src="assets/kmeans.png">
 
 ### Support Vector Machine Classification
 <img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
@@ -214,7 +217,7 @@ We observe that, in general, datasets that have been annotated by humans for cha
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
     </tr>
     <tr>
       <th style="text-align: center">Image Data: Unsupervised</th>
@@ -260,7 +263,7 @@ We observe that, in general, datasets that have been annotated by humans for cha
       <th style="text-align: center">Project Report</th>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
     </tr>
