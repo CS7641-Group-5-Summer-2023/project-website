@@ -62,35 +62,37 @@ The original dataset has been divided into five parts for cross-validation to en
 
 <img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/cf94e86b-c24b-4e0e-a171-b720ea51adfb">
 
-<img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/70db337a-3065-43a4-ade4-9055424512d3">
+<img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/balanced.jpeg">
 
-  ### Feature Extraction
-  As discussed before, one of the drawbacks of this dataset is the lack of human annotations of the mammogram images. In order to make the images more interpretable to our ML models, we perform feature selection to highlight the contours and differentiate the background of these images. We focus on extracting the contours since they are the most distinguishable features between benign and malignant tumors [6] and can act as a proxy for annotated data like "nuclei radius", "concavity," and more. 
-  We use Niblack and Sauvola thresholding for our feature selection method since they are useful for images where the background is not uniform, which is one of the major characteristics of breast mammogram images.
-  
-  Here we show some examples of Niblack and Sauvola thresholding for both benign and malignant tumors.
-  
-  #### Benign Tumor
-  <img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/c67857f4-f995-4dec-98d6-fbc60c7ced17">
-   <img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/0e897f75-f1f1-4b3b-b537-9dbbb4a21813">
+### Feature Extraction
+As discussed before, one of the drawbacks of this dataset is the lack of human annotations of the mammogram images. In order to make the images more interpretable to our ML models, we perform feature selection to highlight the contours and differentiate the background of these images. We focus on extracting the contours since they are the most distinguishable features between benign and malignant tumors [6] and can act as a proxy for annotated data like "nuclei radius", "concavity," and more. 
+We use Niblack and Sauvola thresholding for our feature selection method since they are useful for images where the background is not uniform, which is one of the major characteristics of breast mammogram images.
 
-  #### Malignant Tumor
-   <img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/a4540d75-acd1-4c68-9690-b768a16f74c0">
-   <img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/6a3ac21d-7678-4740-a5e2-16a9fd714573">
+Here we show some examples of Niblack and Sauvola thresholding for both benign and malignant tumors.
 
-   As we can see here, malignant tumors often lose the contour definitions that can be observed in benign tissues.
-   
-   The outputs from thresholding are good candidates for a pipeline using image-based convolutional neural networks. However, in order to visualize our dataset we also attempted to extract aggregate features and applied unsupervised learning on the decreased feature set.
+#### Benign Tumor
+<img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/c67857f4-f995-4dec-98d6-fbc60c7ced17">
+<img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/0e897f75-f1f1-4b3b-b537-9dbbb4a21813">
 
-   ### Image Descriptor Features
-   We used a patch-based image feature extraction technique [7] to extract features with the aim of unsupervised exploration. For this study we restrict the dataset to 40x magnification.
-   The paper proposes selecting patches of the RGB slide image - we selected 25 patches per image with a patch size of 100x100. For each patch, we compute the Sobel kernel convolution over the grayscale image as an approximation of the gradient of the image - both in x- and y- directions. Combined with the original RGB intensities, this results in a feature vector of size 5 for each pixel of the patch. The regional covariance descriptor (RCD) of the patch is then computed as the covariance of the patch. This holds information about contours/edges.
-   
-   In order to capture color information, we create a histogram over each of the color channels, with 256 bins each. The product of this matrix with its tranpose results in another feature vector of size 3x3, capturing global color information.
-   These features are flattened together to provide 34 (25 + 9) features per patch. To get the features for an image, we take the mean of its patch features.
+#### Malignant Tumor
+<img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/a4540d75-acd1-4c68-9690-b768a16f74c0">
+<img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/6a3ac21d-7678-4740-a5e2-16a9fd714573">
 
-   ### Support Vector Machine Classification
-   <img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
+As we can see here, malignant tumors often lose the contour definitions that can be observed in benign tissues.
+
+The outputs from thresholding are good candidates for a pipeline using image-based convolutional neural networks. However, in order to visualize our dataset we also attempted to extract aggregate features and applied unsupervised learning on the decreased feature set.
+
+### Image Descriptor Features
+
+We used a patch-based image feature extraction technique [7] to extract features with the aim of unsupervised exploration. For this study we restrict the dataset to 40x magnification.
+The paper proposes selecting patches of the RGB slide image - we selected 25 patches per image with a patch size of 100x100. For each patch, we compute the Sobel kernel convolution over the grayscale image as an approximation of the gradient of the image - both in x- and y- directions. Combined with the original RGB intensities, this results in a feature vector of size 5 for each pixel of the patch. The regional covariance descriptor (RCD) of the patch is then computed as the covariance of the patch. This holds information about contours/edges.
+
+In order to capture color information, we create a histogram over each of the color channels, with 256 bins each. The product of this matrix with its tranpose results in another feature vector of size 3x3, capturing global color information.
+These features are flattened together to provide 34 (25 + 9) features per patch. To get the features for an image, we take the mean of its patch features.
+
+
+### Support Vector Machine Classification
+<img width="439" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/57345e4c-137e-48f8-b1cb-eee3b6a3f0db">
 <img width="344" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/2787950a-e37b-4f4c-bec3-1afef41f2666">
 
 The above visualizations demonstrate SVMs’ poor ability of handling image-based data. It isn’t suitable for such data for the following reason.
