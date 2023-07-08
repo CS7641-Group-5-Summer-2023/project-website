@@ -109,17 +109,17 @@ Second, SVMs do not inherently handle translation, scale, and rotation invarianc
 Last, SVMs do not automatically learn features from raw data. In image processing tasks, feature engineering (e.g., creating features that describe textures, shapes, or colors in the image) can help improve an SVM's performance. Without this kind of feature engineering, SVMs may not perform well on raw image data.
 
    
-   ### Random Forest Classification
-   We employed the Random Forest algorithm for image classification. Random Forest is an ensemble learning method that combines multiple decision trees to make predictions. Each tree is trained on a random subset of the data and features, and the final prediction is determined by a majority vote of the individual trees.
-  On the first pass, using the data after feature selection and with default parameters, we obtain a classification accuracy of 60%. While it performs better than SVM, adjusting parameters can improve accuracy.
-  
-  <img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/a82fe01c-f387-43e8-8ab0-f8748bf10ec7">
-  <img width="450" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/02e8e192-ae6f-4ee1-8181-2057572f77eb">
-  
-  The general poor performance  might also indicate that the dataset and the feature selection methods might not be suitable for the classification task. Alternative algorithms or exploring more advanced techniques like deep learning with convolutional neural networks (CNNs) could potentially yield better results for the classification tasks.
+### Random Forest Classification
+We employed the Random Forest algorithm for image classification. Random Forest is an ensemble learning method that combines multiple decision trees to make predictions. Each tree is trained on a random subset of the data and features, and the final prediction is determined by a majority vote of the individual trees.
+On the first pass, using the data after feature selection and with default parameters, we obtain a classification accuracy of 60%. While it performs better than SVM, adjusting parameters can improve accuracy.
+
+<img width="400" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/a82fe01c-f387-43e8-8ab0-f8748bf10ec7">
+<img width="450" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/60078072/02e8e192-ae6f-4ee1-8181-2057572f77eb">
+
+The general poor performance  might also indicate that the dataset and the feature selection methods might not be suitable for the classification task. Alternative algorithms or exploring more advanced techniques like deep learning with convolutional neural networks (CNNs) could potentially yield better results for the classification tasks.
 
 
-  ## Feature Annotated Dataset: Wisconsin breast cancer dataset
+## Feature Annotated Dataset: Wisconsin breast cancer dataset
  
 ### Supervised Learning:
 Support Vector Machine (SVM)
