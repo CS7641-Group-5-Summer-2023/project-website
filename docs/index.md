@@ -124,6 +124,17 @@ On the first pass, using the data after feature selection and with default param
 The general poor performance  might also indicate that the dataset and the feature selection methods might not be suitable for the classification task. Alternative algorithms or exploring more advanced techniques like deep learning with convolutional neural networks (CNNs) could potentially yield better results for the classification tasks.
 
 
+### Neural Networks
+Before using CNN, we use other type of NN for comparison. MLP, (Multi-Layer Perceptron), a type of neural network, can perform better on image data than SVMs because they can model non-linear relationships and they can learn hierarchical representations. This means lower layers can learn simple features and higher layers can learn more complex by combining the simpler features from the lower layers. MLPs also accept vectors as input, so like SVMs, the images must be flattened. The loss of spatial information is a downside here as well. We obtain an accuracy of 65%.
+
+
+<img width="400" alt="Screenshot 2023-07-27 at 4 53 57 PM" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/248e9d8b-376e-4469-99fb-d3da13a65043">
+<img width="450" alt="Screenshot 2023-07-27 at 5 00 50 PM" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/1c313009-6cb9-4845-8a06-a027eb8ad6e5">
+
+### CNN
+to be implemented...
+
+
 ## Feature Annotated Dataset: Wisconsin breast cancer dataset
  
 ### Supervised Learning:
