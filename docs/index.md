@@ -160,8 +160,8 @@ For breast cancer detection and classification, we have labeled data where each 
 
 1. Logistic Regression
 
-<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/d2a37344-f29d-4415-a37f-4a9599f75ff7">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/b354ed8b-5d31-403b-9653-6861ce6255c5">
+<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/d2a37344-f29d-4415-a37f-4a9599f75ff7">
 
 The above visualizations demonstrate the outstanding performance of Logistic Regression when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
 
@@ -172,7 +172,21 @@ Secondly, Logistic regression is designed for binary classification problems, ma
 Moreover, The Wisconsin Breast Cancer dataset is well-balanced, meaning it contains a relatively equal number of samples for each class (benign and malignant). Additionally, meticulous preprocessing has likely been performed to handle missing data and normalize features. This balanced distribution and preprocessing contribute to making the data more amenable to separation via a hyperplane in the logistic regression's high-dimensional feature space. As a result, the model can better learn the decision boundary and make accurate predictions.
 
 
-2.Support Vector Machine (SVM)
+2. Random Forest (RF)
+
+<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/08a0fe2b-0b21-45ad-90cc-2939b3505da7)">
+<img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/bb87f0b7-d26f-4107-a297-8e07c2b3f067">
+
+The above visualizations demonstrate the outstanding performance of Random Forest (RF) when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
+
+Firstly, Random Forest is an ensemble learning method that combines multiple decision trees to make predictions. Each decision tree is trained on a random subset of the data and a random subset of features. By aggregating the predictions of individual trees through a majority vote, Random Forest reduces overfitting and increases overall accuracy. This dataset contains various features describing cell nucleus characteristics, and the Random Forest algorithm can effectively capture complex relationships and interactions between these features, leading to improved classification accuracy.
+
+Secondly, Unlike logistic regression, Random Forest can handle both linear and non-linear relationships between features and the target variable. The dataset may contain complex interactions and non-linear patterns, which Random Forest can capture by building multiple decision trees with different subsets of features. This flexibility allows the model to better fit the data, resulting in improved accuracy in predicting breast cancer cases.
+
+Moreover, Random Forest is less prone to overfitting compared to individual decision trees, especially in high-dimensional datasets. The process of training multiple trees on different subsets of data and features reduces the impact of noisy and irrelevant features, leading to a more robust and generalized model. As a result, Random Forest can handle noise and variability in the data while maintaining good predictive performance.
+
+
+3.Support Vector Machine (SVM)
 
 <img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/283a56a5-b8d4-472c-b996-9592815cac26">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/5c41d1eb-22b9-461f-b68f-0558b73e67c5">
@@ -186,12 +200,31 @@ Secondly, SVMs are inherently proficient at binary classification tasks, which i
 Moreover, the Wisconsin Breast Cancer dataset is well-balanced distribution and meticulous preprocessing. These attributes contribute towards making the data easier to separation via a hyperplane in the SVM's high-dimensional feature space.
 
 
+4. Neural Networks (NN)
 
+<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/e493e6af-82dd-47ec-87a9-5b03d4ade2a2">
+<img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/7d125284-df17-4b74-a14a-91cf65528a3d">
 
+The above visualizations demonstrate the outstanding performance of Neural Networks (NN) when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
+
+Firstly, Neural Networks are capable of learning complex feature representations from the input data. The Wisconsin Breast Cancer dataset contains various features computed from digitized fine needle aspirate (FNA) images of breast masses, describing cell nucleus characteristics. These features may have non-linear relationships with the target variable (benign or malignant). Neural Networks, with their hidden layers and activation functions, can capture intricate patterns and non-linear dependencies in the data, enabling them to learn informative representations for accurate classification.
+
+Secondly, Neural Networks excel at handling high-dimensional data, making them well-suited for tasks involving a large number of features. In this dataset, the number of features describing cell nucleus characteristics may be considerable. Neural Networks can effectively process and extract relevant information from such high-dimensional data, allowing them to uncover meaningful patterns that contribute to distinguishing between benign and malignant breast masses.
+
+Moreover, Neural Networks are known for their robustness to noisy data and ability to generalize well on unseen samples. The Wisconsin Breast Cancer dataset may have noise or minor variations in the input features due to image digitization and measurement errors. Neural Networks can handle such noise and prevent it from affecting the overall performance. Additionally, techniques such as dropout and regularization can be applied during training to further enhance the model's generalization capability.
 
 
 # Discussion and Future Directions
-We observe that, in general, datasets that have been annotated by humans for changes in nuclei contours and background texture perform much better than using unannotated images directly. While this *can* indicate that current feature selection and ML models are not as good at identifying small contour changes in breast cancer mammogram data, we plan to perform further parameter optimization on the image-based dataset to improve its accuracy. For the final project report, we also aim to implement a CNN model for the image-based classification task.
+
+In conclusion, the Wisconsin Breast Cancer dataset was analyzed using multiple classification methods, including Logistic Regression, Random Forest, Neural Networks, Support Vector Machines (SVM), and K-means clustering. Each method demonstrated promising results in accurately classifying breast masses as benign or malignant.
+
+Logistic Regression achieved an accuracy of 98.2%, with high precision and recall for both classes, indicating its efficacy in binary classification tasks. Random Forest and Neural Networks also displayed competitive performance, achieving an accuracy of 96.5%. These methods are capable of handling complex features and high-dimensional data, making them valuable tools for breast cancer prediction.
+
+SVM outperformed other methods with the highest accuracy of 99%, along with excellent precision and recall for both classes. Its ability to create an optimal hyperplane in a high-dimensional feature space contributed to its superior performance in this dataset.
+
+Additionally, K-means clustering was applied to the dataset, yielding a Silhouette Score of 0.3845. While K-means provides insights into data clustering, it is primarily an unsupervised method and does not directly provide a binary classification.
+
+Overall, the combination of these classification and clustering methods provides valuable tools for diagnosing breast cancer and contributing to improved patient outcomes. Healthcare professionals and researchers can leverage these techniques to enhance early detection and diagnosis, potentially leading to better treatment strategies and healthcare practices.
 
 # References
 
