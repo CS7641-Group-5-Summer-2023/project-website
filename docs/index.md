@@ -145,8 +145,8 @@ We used the Adam optimizer, and selected hyperparameters by cross-validation. We
 
 The validation loss/accuracy plots against epoch are shown in the figures below. While there is slightly better fitting to the training set than the validation set, we do observe good generalization to the test set - with testing loss ~ 0.65 and testing accuracy ~ 0.77. As a sanity check, we see that the binary classification performance (summing over class predictions) is ~94% on the test set, and a false negative rate of ~1.4%. These results demonstrate fair binary classification performance and multi-class classification performance, with potential for further improvement using different architectures and more datapoints.
 
-<img width="300" alt="image" src="assets/acc_epoch.png">
-<img width="300" alt="image" src="assets/loss_epoch.png">
+<img width="800" alt="image" src="assets/acc_epoch.png">
+<img width="800" alt="image" src="assets/loss_epoch.png">
 
 ## Feature Annotated Dataset: Wisconsin breast cancer dataset
 
