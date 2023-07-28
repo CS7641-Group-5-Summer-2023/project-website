@@ -158,7 +158,7 @@ For breast cancer detection and classification, we have labeled data where each 
  
 ### Supervised Learning:
 
-1. Logistic Regression
+# Logistic Regression
 
 <img width="300" height="200" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/b354ed8b-5d31-403b-9653-6861ce6255c5">
 <img width="350" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/d2a37344-f29d-4415-a37f-4a9599f75ff7">
@@ -172,7 +172,7 @@ Secondly, Logistic regression is designed for binary classification problems, ma
 Moreover, The Wisconsin Breast Cancer dataset is well-balanced, meaning it contains a relatively equal number of samples for each class (benign and malignant). Additionally, meticulous preprocessing has likely been performed to handle missing data and normalize features. This balanced distribution and preprocessing contribute to making the data more amenable to separation via a hyperplane in the logistic regression's high-dimensional feature space. As a result, the model can better learn the decision boundary and make accurate predictions.
 
 
-2. Random Forest (RF)
+# Random Forest (RF)
 
 <img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/08a0fe2b-0b21-45ad-90cc-2939b3505da7">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/bb87f0b7-d26f-4107-a297-8e07c2b3f067">
@@ -186,7 +186,7 @@ Secondly, Unlike logistic regression, Random Forest can handle both linear and n
 Moreover, Random Forest is less prone to overfitting compared to individual decision trees, especially in high-dimensional datasets. The process of training multiple trees on different subsets of data and features reduces the impact of noisy and irrelevant features, leading to a more robust and generalized model. As a result, Random Forest can handle noise and variability in the data while maintaining good predictive performance.
 
 
-3. Support Vector Machine (SVM)
+# Support Vector Machine (SVM)
 
 <img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/283a56a5-b8d4-472c-b996-9592815cac26">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/5c41d1eb-22b9-461f-b68f-0558b73e67c5">
@@ -200,7 +200,7 @@ Secondly, SVMs are inherently proficient at binary classification tasks, which i
 Moreover, the Wisconsin Breast Cancer dataset is well-balanced distribution and meticulous preprocessing. These attributes contribute towards making the data easier to separation via a hyperplane in the SVM's high-dimensional feature space.
 
 
-4. Neural Networks (NN)
+# Neural Networks (NN)
 
 <img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/e493e6af-82dd-47ec-87a9-5b03d4ade2a2">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/7d125284-df17-4b74-a14a-91cf65528a3d">
@@ -214,7 +214,7 @@ Secondly, Neural Networks excel at handling high-dimensional data, making them w
 Moreover, Neural Networks are known for their robustness to noisy data and ability to generalize well on unseen samples. The Wisconsin Breast Cancer dataset may have noise or minor variations in the input features due to image digitization and measurement errors. Neural Networks can handle such noise and prevent it from affecting the overall performance. Additionally, techniques such as dropout and regularization can be applied during training to further enhance the model's generalization capability.
 
 
-# Discussion and Future Directions
+# Conclusion
 
 In conclusion, the Wisconsin Breast Cancer dataset was analyzed using multiple classification methods, including Logistic Regression, Random Forest, Neural Networks, Support Vector Machines (SVM), and K-means clustering. Each method demonstrated promising results in accurately classifying breast masses as benign or malignant.
 
