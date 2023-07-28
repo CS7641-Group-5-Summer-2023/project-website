@@ -28,8 +28,13 @@ We have divided our analysis into parts, first using the image dataset and secon
   </ol>
   <li>Feature Annotated Dataset</li>
   <ol>
+      <li>Unsupervised</li>
       <li>K-means Clustering</li>
+      <li>Supervised</li>
+      <li>Logistic Regression</li>
+      <li>Random Forest</li>
       <li>Support Vector Machine Classification</li>
+      <li>Neural Networks</li>
     </ol>
 </ol>
 
