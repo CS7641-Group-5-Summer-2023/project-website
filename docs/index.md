@@ -174,7 +174,7 @@ Moreover, The Wisconsin Breast Cancer dataset is well-balanced, meaning it conta
 
 2. Random Forest (RF)
 
-<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/08a0fe2b-0b21-45ad-90cc-2939b3505da7)">
+<img width="300" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/08a0fe2b-0b21-45ad-90cc-2939b3505da7">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/bb87f0b7-d26f-4107-a297-8e07c2b3f067">
 
 The above visualizations demonstrate the outstanding performance of Random Forest (RF) when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
