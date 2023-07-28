@@ -186,7 +186,7 @@ Secondly, Unlike logistic regression, Random Forest can handle both linear and n
 Moreover, Random Forest is less prone to overfitting compared to individual decision trees, especially in high-dimensional datasets. The process of training multiple trees on different subsets of data and features reduces the impact of noisy and irrelevant features, leading to a more robust and generalized model. As a result, Random Forest can handle noise and variability in the data while maintaining good predictive performance.
 
 
-3.Support Vector Machine (SVM)
+3. Support Vector Machine (SVM)
 
 <img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/283a56a5-b8d4-472c-b996-9592815cac26">
 <img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/5c41d1eb-22b9-461f-b68f-0558b73e67c5">
