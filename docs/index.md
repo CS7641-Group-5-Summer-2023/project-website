@@ -280,7 +280,7 @@ Overall, the combination of these classification and clustering methods provides
   </thead>
   <tbody>
     <tr>
-      <th style="text-align: center">Image Data: Data Cleaning</th>
+      <th style="text-align: center">Introduction</th>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1"></font></td>
@@ -288,31 +288,7 @@ Overall, the combination of these classification and clustering methods provides
       <td style="text-align: center"><font size="+1"></font></td>
     </tr>
     <tr>
-      <th style="text-align: center">Image Data: Feature Selection</th>
-      <td style="text-align: center"><font size="+1">*</font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1">*</font></td>
-    </tr>
-    <tr>
-      <th style="text-align: center">Image Data: Unsupervised</th>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1">*</font></td>
-    </tr>
-    <tr>
-      <th style="text-align: center">Image Data: SVM</th>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1">*</font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-      <td style="text-align: center"><font size="+1"></font></td>
-    </tr>
-    <tr>
-      <th style="text-align: center">Image Data: Random Forest</th>
+      <th style="text-align: center">Problem Definition</th>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1"></font></td>
@@ -320,7 +296,15 @@ Overall, the combination of these classification and clustering methods provides
       <td style="text-align: center"><font size="+1"></font></td>
     </tr>
     <tr>
-      <th style="text-align: center">Wisconsin Data: SVM</th>
+      <th style="text-align: center">Data Collection</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Methods</th>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1"></font></td>
@@ -328,7 +312,15 @@ Overall, the combination of these classification and clustering methods provides
       <td style="text-align: center"><font size="+1"></font></td>
     </tr>
     <tr>
-      <th style="text-align: center">Wisconsin Data: KMeans</th>
+      <th style="text-align: center">Results and Discussion</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Conclusions</th>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1"></font></td>
@@ -336,15 +328,33 @@ Overall, the combination of these classification and clustering methods provides
       <td style="text-align: center"><font size="+1"></font></td>
     </tr>
     <tr>
-      <th style="text-align: center">Project Report</th>
+      <th style="text-align: center">Github Page</th>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1"></font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
       <td style="text-align: center"><font size="+1">*</font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Presentation Slides</th>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+    </tr>
+    <tr>
+      <th style="text-align: center">Video Recording</th>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1">*</font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
+      <td style="text-align: center"><font size="+1"></font></td>
     </tr>
         
   </tbody>
 </table>
+
+
 
 Link to timeline chart - [Project Timeline](https://www.dropbox.com/s/8jzimta0l86ylog/ML%20Project%205%20Timeline.xlsx?dl=0)
