@@ -137,8 +137,16 @@ Before using CNN, we use other type of NN for comparison. MLP, (Multi-Layer Perc
 <img width="450" alt="Screenshot 2023-07-27 at 5 00 50 PM" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/1c313009-6cb9-4845-8a06-a027eb8ad6e5">
 
 ### CNN
-to be implemented...
+We used a supervised CNN approach to train a classifier for the image data, considering the suitability of kernel-based feature extraction for the task - the 400x magnification set was used for training since we found the malignant portion to be location dependent (the highest zoom factor would increase area of the affected tissue.) Images were split into training, validation and testing with a 70:20:10 split. Patches of size 224x224 were taken from each image to augment the data, and support the input size for ResNet18, which was the chosen architecture. This model is suitable due to the relative scarcity of datapoints, and available training resources on Colab.
 
+The classifier was trained as a softmax over the 8 distinct subtypes of tumors available in the dataset. Similar cleaning procedures were used from the unsupervised approach above, and the color image was fed as an input to the classifier.
+
+We used the Adam optimizer, and selected hyperparameters by cross-validation. We decided on an L2 regularization constant of 0.1, learning rate of 5e-4, step_size of 5 epochs and ran for a total of 12 epochs, with a 10 percent decrease in learning rate.
+
+The validation loss/accuracy plots against epoch are shown in the figures below. While there is slightly better fitting to the training set than the validation set, we do observe good generalization to the test set - with testing loss ~ 0.65 and testing accuracy ~ 0.77. As a sanity check, we see that the binary classification performance (summing over class predictions) is ~94% on the test set, and a false negative rate of ~1.4%. These results demonstrate fair binary classification performance and multi-class classification performance, with potential for further improvement using different architectures and more datapoints.
+
+<img width="300" alt="image" src="assets/acc_epoch.png">
+<img width="300" alt="image" src="assets/loss_epoch.png">
 
 ## Feature Annotated Dataset: Wisconsin breast cancer dataset
 
