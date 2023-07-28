@@ -136,22 +136,6 @@ to be implemented...
 
 
 ## Feature Annotated Dataset: Wisconsin breast cancer dataset
- 
-### Supervised Learning:
-Support Vector Machine (SVM)
-
-<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/283a56a5-b8d4-472c-b996-9592815cac26">
-<img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/5c41d1eb-22b9-461f-b68f-0558b73e67c5">
-
-The above visualizations demonstrate the outstanding performance of Support Vector Machines (SVMs) when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
-
-Firstly, SVMs excel at distinguishing between classes based on a feature set that allows for linear separation. The Wisconsin Breast Cancer dataset provides numerous useful features such as radius, texture, perimeter, area, and more. These features carry essential information of the condition, thereby allowing the SVM model to learn an effective decision boundary.
-
-Secondly, SVMs are inherently proficient at binary classification tasks, which is the case with the breast cancer prediction problem. The ability to distinguish between two distinct classes enables the SVM model to optimize its performance on this dataset.
-
-Moreover, the Wisconsin Breast Cancer dataset is well-balanced distribution and meticulous preprocessing. These attributes contribute towards making the data easier to separation via a hyperplane in the SVM's high-dimensional feature space.
-
-
 
 ### Unsupervised Learning:
 
@@ -171,6 +155,38 @@ K-means clustering may not be the most suitable method for breast cancer detecti
 K-means clustering is primarily an unsupervised learning algorithm used for clustering data into groups based on similarity. It does not directly consider the class labels or target variable during training. 
 
 For breast cancer detection and classification, we have labeled data where each sample is associated with a specific class (benign or malignant). In this case, supervised learning algorithms such as logistic regression, support vector machines (SVM), random forests, or neural networks are more commonly used for classification tasks. These algorithms take into account the labeled data and learn to classify new samples based on the patterns and relationships in the training data.
+ 
+### Supervised Learning:
+
+1. Logistic Regression
+![image](https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/d2a37344-f29d-4415-a37f-4a9599f75ff7)
+![image](https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/b354ed8b-5d31-403b-9653-6861ce6255c5)
+
+The above visualizations demonstrate the outstanding performance of Logistic Regression when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
+
+Firstly, Logistic regression excels at binary classification tasks and works well when there is a clear linear separation between classes. The Wisconsin Breast Cancer dataset provides numerous features such as radius, texture, perimeter, and area, which carry essential information about the condition. Logistic regression effectively models the relationship between these features and the binary target variable (benign or malignant) by learning an optimal decision boundary. Since the features in this dataset allow for reasonably linear separation, logistic regression can make accurate predictions.
+
+Secondly, Logistic regression is designed for binary classification problems, making it highly appropriate for predicting breast cancer cases, which are either benign (0) or malignant (1). The model is inherently proficient in handling such scenarios, enabling it to optimize its performance on this specific dataset. It is able to capture the underlying patterns and relationships between features and class labels, leading to accurate predictions.
+
+Moreover, The Wisconsin Breast Cancer dataset is well-balanced, meaning it contains a relatively equal number of samples for each class (benign and malignant). Additionally, meticulous preprocessing has likely been performed to handle missing data and normalize features. This balanced distribution and preprocessing contribute to making the data more amenable to separation via a hyperplane in the logistic regression's high-dimensional feature space. As a result, the model can better learn the decision boundary and make accurate predictions.
+
+
+2.Support Vector Machine (SVM)
+
+<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/283a56a5-b8d4-472c-b996-9592815cac26">
+<img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/78183814/5c41d1eb-22b9-461f-b68f-0558b73e67c5">
+
+The above visualizations demonstrate the outstanding performance of Support Vector Machines (SVMs) when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
+
+Firstly, SVMs excel at distinguishing between classes based on a feature set that allows for linear separation. The Wisconsin Breast Cancer dataset provides numerous useful features such as radius, texture, perimeter, area, and more. These features carry essential information of the condition, thereby allowing the SVM model to learn an effective decision boundary.
+
+Secondly, SVMs are inherently proficient at binary classification tasks, which is the case with the breast cancer prediction problem. The ability to distinguish between two distinct classes enables the SVM model to optimize its performance on this dataset.
+
+Moreover, the Wisconsin Breast Cancer dataset is well-balanced distribution and meticulous preprocessing. These attributes contribute towards making the data easier to separation via a hyperplane in the SVM's high-dimensional feature space.
+
+
+
+
 
 
 # Discussion and Future Directions
