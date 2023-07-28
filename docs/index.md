@@ -160,8 +160,8 @@ For breast cancer detection and classification, we have labeled data where each 
 
 1. Logistic Regression
 
-<img width="351" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/b354ed8b-5d31-403b-9653-6861ce6255c5">
-<img width="447" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/d2a37344-f29d-4415-a37f-4a9599f75ff7">
+<img width="300" height="200" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/b354ed8b-5d31-403b-9653-6861ce6255c5">
+<img width="300" height="200" alt="image" src="https://github.com/CS7641-Group-5-Summer-2023/project-website/assets/67562398/d2a37344-f29d-4415-a37f-4a9599f75ff7">
 
 The above visualizations demonstrate the outstanding performance of Logistic Regression when applied to the Wisconsin Breast Cancer dataset. It can achieve good performance for several reasons.
 
